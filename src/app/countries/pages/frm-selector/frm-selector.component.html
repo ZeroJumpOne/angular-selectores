@@ -1,0 +1,48 @@
+<h1 class="mt-5">Selectores anidados</h1>
+<hr>
+
+<form [formGroup]="frmSelector">
+
+   <!-- Region -->
+   <div class="row mb-3">
+      <div class="col">
+         <label class="form-label">Continente:</label>
+         <select class="form-control" formControlName="region">
+            <option value="">--Seleccionar Continente--</option>
+            <option *ngFor="let item of regions" [value]="item">{{ item }}</option>
+         </select>
+      </div>
+   </div>
+
+   <!-- Countries -->
+   <div class="row mb-3" *ngIf="countriesByRegions.length > 0">
+      <div class="col">
+         <label class="form-label">País:</label>
+         <select class="form-control" formControlName="country">
+            <option value="">--Seleccionar País--</option>
+            <option *ngFor="let item of countriesByRegions" [value]="item.cca3"> {{ item.name }}</option>
+         </select>
+      </div>
+   </div>
+
+   <!-- Borders -->
+   <div class="row mb-3" *ngIf="borders.length > 0">
+      <div class="col">
+         <label class="form-label">Frontera:</label>
+         <select class="form-control" formControlName="border">
+            <option value="">--Seleccionar Frontera--</option>
+            <option *ngFor="let item of borders" [value]="item.cca3"> {{ item.name }}</option>
+         </select>
+      </div>
+   </div>
+
+
+</form>
+
+<h3>Formulario</h3>
+<code>
+   {{ frmSelector.value | json }}
+</code>
+<p>
+   Is it form valid?: {{ frmSelector.valid }}
+</p>
