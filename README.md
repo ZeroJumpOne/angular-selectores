@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4. By M.Ing. Isaac Hdez Castro
 
 ## See on execution online
-Navigate to https://zerojumpone.github.io/angular-selectores/selector/selector
+Navigate to https://zerojumpone.github.io/angular-selectores/selector
 
 ## Development server
 
