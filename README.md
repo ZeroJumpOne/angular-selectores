@@ -2,7 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4. By M.Ing. Isaac Hdez Castro
 
-## See on execution Deployments
+## See on execution
+
+Click on Actions and selection deployment
 
 ## Development server
 
